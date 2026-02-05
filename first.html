@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>
+            Easha
+        </title>
+        <style>
+            .Header{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 35px;
+                color: rgb(92, 81, 84);
+            }
+            form{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: rgb(24, 24, 24);
+            
+            }
+            .form{
+                
+            }
+            .label{
+                display:block;
+                margin-top: 10px;
+            }
+            .textbar{
+                border-color: rgba(192, 119, 119, 0.288);
+                border-radius: 1px;
+                border-style: solid;
+                border-radius: 3px;
+                
+            }
+            .btn{
+                margin-top: 20px;
+                width: 100%;
+            }
+          
+        </style>
+    </head>
+
+    <body>
+        <h1 class="Header">Donation Form!</h1>
+        <form>
+            <div class="form">
+            <label for="name" class="label">Full Name</label>
+            <input type="text" id="name" name="name" class="textbar"required>
+
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" name="email"  class="textbar" required>
+
+            <label for="amount" class="label">Donation Amount</label>
+            <input type="number" id="amount" name="amount" min="1"  class="textbar" required>
+            
+            <label for="method" class="label">Payment Method</label>
+            <select id="method" name="method required">
+                <div class="textbar">
+                <option value="">Select</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="UPI">UPI</option>
+                <option vslue="Paypal">Paypal</option>
+                </div>
+                
+            </select>
+            <br>
+            <div class="btn">
+                <button type="Submit">
+                    Submit
+                </button>
+                <button type="reset">
+                    Reset
+                </button>
+            </div>
+            
+            </div>
+            </form>
+    </body>
+</html>
