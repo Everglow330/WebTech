@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Academic Profile Page for Lab Task 05">
+    <meta name="keywords" content="HTML5, Semantic, Profile, Education, Contact Form">
+    <meta name="author" content="Essie Kanis Fatema">
+    <title>Essie Kanis Fatema - Academic Profile</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Essie Kanis Fatema</h1>
+        <nav>
+            <ul>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>
+                I am a Computer Science and Engineering student currently in my 6th semester. 
+                I am passionate about web development, machine learning, and building innovative projects. 
+                This page serves as a personal academic profile.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <table border="1">
+                <caption>Educational Qualifications</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HSC</td>
+                        <td>AIUB High School</td>
+                        <td>2022</td>
+                        <td>4.75/5.00</td>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>AIUB High School</td>
+                        <td>2020</td>
+                        <td>5.00/5.00</td>
+                    </tr>
+                    <tr>
+                        <td>BSc (CSE)</td>
+                        <td>American International University-Bangladesh</td>
+                        <td>Ongoing</td>
+                        <td>Current GPA: 3.85</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required maxlength="50">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required maxlength="50">
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" pattern="[0-9]{11}" maxlength="11">
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Your message here" required maxlength="500" rows="5" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Essie Kanis Fatema | Academic Profile</p>
+    </footer>
+
+</body>
+</html>
