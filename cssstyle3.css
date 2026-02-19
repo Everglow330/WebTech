@@ -1,0 +1,90 @@
+/* ===== Part A: Box Model ===== */
+.box {
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 15px;
+    background-color: #f0c987;
+    text-align: center;
+    line-height: 100px; /* vertically center text */
+}
+
+.box1 {
+    background-color: #f0a1a8;
+}
+
+.box2 {
+    background-color: #a1f0b8;
+}
+
+.box3 {
+    background-color: #a1b8f0;
+}
+
+/* ===== Part B: Box Sizing ===== */
+.default-box {
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 10px;
+    background-color: #ffd580;
+}
+
+.border-box {
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #80dfff;
+}
+
+/* ===== Part C: Display Properties ===== */
+.display-block {
+    display: block;
+    background-color: #ff9999;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.display-inline {
+    display: inline;
+    background-color: #99ff99;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.display-inline-block {
+    display: inline-block;
+    background-color: #9999ff;
+    padding: 10px;
+    margin: 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+/* ===== Part D: Visibility vs Display ===== */
+.visible-box {
+    background-color: #f4e842;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.hidden-box {
+    visibility: hidden;
+    background-color: #ffb347;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.none-box {
+    display: none;
+    background-color: #ff6961;
+    padding: 10px;
+    margin: 5px 0;
+}

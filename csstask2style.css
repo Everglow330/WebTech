@@ -1,0 +1,87 @@
+/* LAB TASK 02 STYLES */
+
+/* 1. Group selector */
+h1, h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+/* 2. Descendant selector */
+div p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* 3. Class selector */
+.highlight {
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Absolute units */
+.box-absolute {
+    width: 200px; /* px */
+    height: 5cm;   /* cm */
+    background-color: lightblue;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Relative units */
+.box-relative {
+    width: 50%;       /* % */
+    height: 20vh;     /* viewport height */
+    padding: 2em;     /* em */
+    font-size: 1.2rem; /* rem */
+    background-color: lightgreen;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    width: 300px;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Pseudo-classes */
+input[type="text"]:focus {
+    border-color: darkgreen;
+    outline: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+button.btn:active {
+    background-color: darkorange;
+    color: white;
+    transform: scale(0.98);
+}
+
+/* General button style */
+button.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Optional body style */
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

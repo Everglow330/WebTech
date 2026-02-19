@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lab Task 02: CSS Units and Selector Types">
+    <title>Lab Task 02 - CSS Units & Selectors</title>
+    
+    <link rel="stylesheet" href="csstask2style.css">
+</head>
+<body>
+
+    <header>
+    
+        <h1>Lab Task 02: CSS Units & Selector Types</h1>
+        <h2>Demonstration of Absolute & Relative Units</h2>
+    </header>
+
+    <main>
+      
+        <div class="content">
+            <p>This paragraph is inside a div and styled using a descendant selector.</p>
+            <p class="highlight">This paragraph uses a class for emphasis.</p>
+        </div>
+
+    
+        <div class="box-absolute">
+            <p>Box with absolute units (width: 200px, height: 5cm)</p>
+        </div>
+
+        <!-- Relative units: %, em, rem, vh -->
+        <div class="box-relative">
+            <p>Box with relative units (width: 50%, padding: 2em, font-size: 1.2rem, height: 20vh)</p>
+        </div>
+
+        <!-- Attribute selector: input[type="text"] -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Links and buttons for pseudo-classes -->
+        <a href="#">Hover over this link</a>
+        <button class="btn">Click Me</button>
+    </main>
+
+</body>
+</html>
