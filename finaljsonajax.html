@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info AJAX App</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+        }
+        .student {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px auto;
+            width: 300px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Information</h2>
+    <button onclick="fetchData()">Load Students</button>
+
+    <div id="output"></div>
+
+    <script>
+        function fetchData() {
+            var xhr = new XMLHttpRequest();
+
+            xhr.open("GET", "data.php", true);
+
+            xhr.onload = function() {
+                if (this.status == 200) {
+                    var students = JSON.parse(this.responseText);
+
+                    var output = "";
+
+                    students.forEach(function(student) {
+                        output += `
+                            <div class="student">
+                                <h3>${student.name}</h3>
+                                <p><strong>ID:</strong> ${student.id}</p>
+                                <p><strong>Department:</strong> ${student.department}</p>
+                                <p><strong>CGPA:</strong> ${student.cgpa}</p>
+                            </div>
+                        `;
+                    });
+
+                    document.getElementById("output").innerHTML = output;
+                }
+            };
+
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>
