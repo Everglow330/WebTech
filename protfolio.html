@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Essie Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f7fa;
+      color:#333;
+    }
+
+    /* Navbar */
+    nav{
+      background:#111827;
+      color:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 50px;
+      position:sticky;
+      top:0;
+    }
+
+    nav h2{
+      color:#60a5fa;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#60a5fa;
+    }
+
+    /* Hero Section */
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      flex-direction:column;
+      background:linear-gradient(to right,#2563eb,#1e3a8a);
+      color:white;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero span{
+      color:#facc15;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      padding:12px 25px;
+      background:#facc15;
+      color:black;
+      border:none;
+      border-radius:8px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    /* Sections */
+    section{
+      padding:70px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:35px;
+      color:#1e3a8a;
+    }
+
+    /* About */
+    .about{
+      text-align:center;
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    /* Skills */
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .skill-card{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-5px);
+    }
+
+    /* Projects */
+    .projects-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .project-card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:scale(1.03);
+    }
+
+    .project-card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .project-content{
+      padding:20px;
+    }
+
+    /* Contact */
+    .contact{
+      text-align:center;
+    }
+
+    .contact input,
+    .contact textarea{
+      width:100%;
+      max-width:500px;
+      padding:12px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:8px;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:10px;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Essie</h2>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hello, I'm <span>Essie</span></h1>
+
+    <p>CSE Student | Web Developer | Programmer</p>
+
+    <button class="btn" onclick="showMessage()">
+      Hire Me
+    </button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+      <p>
+        I am a Computer Science student passionate about web development,
+        programming, and creating beautiful websites.
+        I enjoy learning new technologies and building creative projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Building webpage structure</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Designing beautiful interfaces</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Making websites interactive</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>C#</h3>
+        <p>Programming and problem solving</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="https://picsum.photos/400/200?1">
+
+        <div class="project-content">
+          <h3>Library Management System</h3>
+
+          <p>
+            A PHP and MySQL project for managing books and students.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://picsum.photos/400/200?2">
+
+        <div class="project-content">
+          <h3>Portfolio Website</h3>
+
+          <p>
+            A responsive personal portfolio website using HTML, CSS, and JS.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://picsum.photos/400/200?3">
+
+        <div class="project-content">
+          <h3>Course Information System</h3>
+
+          <p>
+            AJAX-based system that loads course information dynamically.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+
+      <input type="text" placeholder="Your Name">
+
+      <br>
+
+      <input type="email" placeholder="Your Email">
+
+      <br>
+
+      <textarea rows="5" placeholder="Your Message"></textarea>
+
+      <br>
+
+      <button class="btn">Send Message</button>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Essie Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showMessage() {
+      alert("Thank you for visiting my portfolio!");
+    }
+  </script>
+
+</body>
+</html>
